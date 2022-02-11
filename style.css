@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+h1{
+    margin: 40px 0;
+    font-size: 40px;
+
+}
+.add-todo-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-wrapper{
+    margin-right: 20px;
+}
+
+.input-wrapper input{
+    width: 330px;
+    height: 35px;
+    border: 4px solid rgb(240, 188, 19);
+    border-radius: 10px;
+}
+.button-wrapper button{
+    width: 120px;
+    height: 45px;
+    background-color: #fff;
+    border: 4px solid rgb(240, 188, 19);
+    border-radius: 10px;
+}
+
+h2{
+    margin: 60px auto 30px;
+    font-size: 35px;
+}
+.line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: aliceblue;
+}
+
+.todoItem{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    background-color: rgb(240, 188, 19);
+}
+
+.description{
+    width: 330px;
+    height: 35px;
+    padding: 3px;
+    font-size: 22px;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+}
+
+.buttons{
+display: flex;
+align-items: center;
+margin-left: 15px;
+}
+.checkbox{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.btnDelete{
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: rgb(238, 133, 64);
+    border-radius: 10px;
+}
+
+.checked{
+    background-color: rgb(117, 109, 109);
+    opacity: .6;
+}
+
+.deletEl{
+    animation: opasity 1s ease-in-out;
+}
+
+@keyframes opasity{
+    from {
+        opacity: 1;
+        background-color: aquamarine;
+    }
+    to{
+        opacity: 0;
+    }
+}
